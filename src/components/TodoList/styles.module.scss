@@ -1,0 +1,222 @@
+.todoListWrapper {
+    width: 510px;
+    max-width: 510px;
+    margin-top: 170px;
+    border-radius: 8px;
+    background: #504c3c;
+}
+
+.box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title {
+    display: flex;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    
+    width: 510px;
+    height: 70px;
+    top: 70px;
+    font-size: 43px;
+    font-weight: 500;
+    border: 4px solid #000;
+    border-radius: 8px;
+    background: #e6c339;
+    color: #000;
+    text-transform: uppercase;
+    
+}
+
+.todoList {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    height: 100%;
+    width: 100%;
+    margin-top: 40px;
+    margin-right: 40px;
+    margin-bottom: 20px;
+    list-style: none;
+}
+
+.inputField {
+    width: 88%;
+    height: 50px;
+    margin-top: 30px;
+    font-size: 23px;
+    font-weight: 400;
+    background: #f0e68c;
+}
+
+.button {
+    width: 88%;
+    height: 50px;
+    margin-top: 20px;
+    font-size: 20px;
+    cursor: pointer;
+    background: #000000;
+    color: #ffffff;
+}
+
+.StatusCompleted {
+    margin-top: 10px;
+    font-size: 23px;
+    font-weight: 600;
+    color: #41e141;
+}
+
+.StatusRemaining {
+    font-size: 23px;
+    font-weight: 600;
+    color: #ec420e;
+}
+
+.todo {
+    display: flex;
+    width: 450px;
+    height: auto;
+    min-height: 35px;
+    padding-top: 2px;
+    margin-bottom: 20px;
+    font-size: 23px;
+    font-weight: 700;
+    cursor: pointer;
+    background: #ccc6ad;
+    border: 2px solid #000000;
+}
+
+.done {
+    display: flex;
+    width: 450px;
+    height: auto;
+    min-height: 35px;
+    padding-top: 2px;
+    margin-bottom: 20px;
+    font-size: 23px;
+    font-weight: 700;
+    cursor: pointer;
+    border: 2px solid #000000;
+    text-decoration-line: line-through;
+}
+
+.CheckboxIcon {
+    position: relative;
+    top: 2px;
+    left: 3px;
+    margin-right: 10px;
+}
+
+.trashIconWrapper {
+    position: absolute;
+    display: flex;
+    right: 0;
+    margin-right: 4px;
+    margin-top: 3px;
+    background: transparent;
+}
+
+.trashIcon {
+    cursor:  pointer;
+    color: #ff0000;
+}
+
+
+@media (max-width: 560px) {
+    .todoListWrapper {
+        width: 350px;
+        max-width: 510px;
+    }
+    
+    .title {
+        width: 350px;
+        height: 60px;
+        top: 80px;
+        font-size: 33px;
+    }
+    
+    .inputField {
+        font-size: 20px;
+    }
+    
+    .button {
+        height: 50px;
+        font-size: 18px;
+    }
+    
+    .StatusCompleted {
+        font-size: 19px;
+        margin-top: 10px;
+    }
+    
+    .StatusRemaining {
+        font-size: 19px;
+    }
+    
+    .todo {
+        width: 310px;
+        font-size: 20px;
+    }
+    
+    .done {
+        width: 310px;
+        font-size: 20px;
+    }
+    
+    .trashIcon {
+        margin-right: -3px;
+        margin-top: 1px;
+    }
+}
+
+@media (max-width: 380px) {
+    .todoListWrapper {
+        width: 290px;
+        max-width: 510px;
+    }
+    
+    .title {
+        width: 290px;
+        height: 50px;
+        top: 90px;
+        font-size: 26px;
+    }
+    
+    .inputField {
+        font-size: 18px;
+    }
+    
+    .button {
+        height: 50px;
+        font-size: 16px;
+    }
+    
+    .StatusCompleted {
+        font-size: 16px;
+        margin-top: 10px;
+    }
+    
+    .StatusRemaining {
+        font-size: 16px;
+    }
+    
+    .todo {
+        width: 260px;
+        font-size: 16px;
+    }
+    
+    .done {
+        width: 260px;
+        font-size: 16px;
+    }
+    
+    .trashIcon {
+        margin-right: -3px;
+        margin-top: 1px;
+    }
+}
